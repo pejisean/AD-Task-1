@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Welcome to the Weather Report Page!</h1>
-    <a href="page/index.php" class="btn">Generate now!</a>
+    <a href="page/index.php" class="btn">Here's the upcoming forecast!</a>
 </body>
 </html>
