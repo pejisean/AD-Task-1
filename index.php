@@ -11,7 +11,7 @@
 <body>
     <div class="rain front-row">
     </div>
-    <div class="h-screen flex item-center justify-center">
+    <div class="h-screen flex item-center justify-center bg-opacity-50">
         <h1 class="font-bold text-4x1">Welcome to the Weather Report Page!</h1>
         <a href="page/index.php" class="btn">Here's the upcoming forecast!</a>
     </div>
