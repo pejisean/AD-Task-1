@@ -22,7 +22,7 @@
                 }
 
                 for($i = 0;$i< count($weekdays);$i++){
-                    echo '<div class="bg-white bg-opacity-80 rounded-lg shadow p-6 text-center">';
+                    echo '<div class="bg-white bg-opacity-80 rounded-lg shadow p-6 text-center fade-in">';
                         echo '<div class="font-bold text-xl mb-2">'.$weekdays[$i].'</div>';
                         echo '<div class="text-4xl font-extrabold mb-2">'.$temperatures[$i].'°C</div>';
                         if($temperatures[$i] < 0){
