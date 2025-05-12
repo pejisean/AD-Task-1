@@ -15,6 +15,9 @@
             Return Home
     </a>
     <div class="min-h-screen flex items-center justify-center">
+         <h1 class="fixed top-0 font-extrabold w-full text-center text-[50px] text-white leading-tight p-4 pointer-events-none">
+            Here's the upcoming weather for the week!
+        </h1>
         <div class="grid grid-cols-5 gap-6 p-8 justify-center">
             <?php
                 //Weather Forecast Logic
