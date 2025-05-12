@@ -8,39 +8,46 @@
     <link rel="stylesheet" href="/assets/css/example.css">
 </head>
 <body>
-    <?php
-        //Weather Forecast Logic
-        $weekdays = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
-        $temperatures = array();
-        for($i=0;$i<7;$i++){
-            $temperatures[$i] = rand(-10, 40);
-        }
+    
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="grid grid-cols-5 gap-6 p-8 justify-center">
+            <?php
+                //Weather Forecast Logic
+                $weekdays = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+                $temperatures = array();
+                for($i=0;$i<7;$i++){
+                    $temperatures[$i] = rand(-10, 40);
+                }
 
-        for($i = 0;$i< count($weekdays);$i++){
-            echo "<strong>".$weekdays[$i]."</strong>".$temperatures[$i];
-            if($temperatures[$i] < 0){
-                //freezing
-                echo '❄️🥶';
-            }elseif ($temperatures[$i] >= 0 && $temperatures[$i] < 10) {
-                // Cold
-                echo '🧥🌬️';
-            } elseif ($temperatures[$i] >= 10 && $temperatures[$i] < 20) {
-                // Cool
-                echo '🌤️🙂';
-            } elseif ($temperatures[$i] >= 20 && $temperatures[$i] < 25) {
-                // Mild/Comfortable
-                echo '☀️😌';
-            } elseif ($temperatures[$i] >= 25 && $temperatures[$i] < 30) {
-                // Warm
-                echo '😎🔥';
-            } else {
-                // Hot (30°C and above)
-                echo '🥵🔥☀️';
-            }
+                for($i = 0;$i< count($weekdays);$i++){
+                    echo '<div class="bg-white bg-opacity-80 rounded-lg shadow p-6 text-center">';
+                        echo '<div class="font-bold text-xl mb-2">'.$weekdays[$i].'</div>';
+                        echo '<div class="text-4xl font-extrabold mb-2">'.$temperatures[$i].'°C</div>';
+                        if($temperatures[$i] < 0){
+                            //freezing
+                            echo '❄️🥶';
+                        }elseif ($temperatures[$i] >= 0 && $temperatures[$i] < 10) {
+                            // Cold
+                            echo '🧥🌬️';
+                        } elseif ($temperatures[$i] >= 10 && $temperatures[$i] < 20) {
+                            // Cool
+                            echo '🌤️🙂';
+                        } elseif ($temperatures[$i] >= 20 && $temperatures[$i] < 25) {
+                            // Mild/Comfortable
+                            echo '☀️😌';
+                        } elseif ($temperatures[$i] >= 25 && $temperatures[$i] < 30) {
+                            // Warm
+                            echo '😎🔥';
+                        } else {
+                            // Hot (30°C and above)
+                            echo '🥵🔥☀️';
+                        }
+                    echo '</div>';
 
-            echo "<br>";
-        }
+                }
 
-    ?>
+            ?>
+        </div>
+    </div>
 </body>
 </html>
