@@ -11,6 +11,9 @@
 <body>
     <div class="rain front-row pointer-events-none">
     </div>
+    <a href="../index.php" class="fixed top-0 left-[-30] ml-2 mt-2 bg-slate-400 hover:bg-slate-500 font-bold py-2 px-2 inline-block text-center rounded fade-in">
+            Return Home
+    </a>
     <div class="min-h-screen flex items-center justify-center">
         <div class="grid grid-cols-5 gap-6 p-8 justify-center">
             <?php
