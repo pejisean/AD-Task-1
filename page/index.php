@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/assets/css/example.css">
 </head>
 <body>
-    
+    <div class="rain front-row pointer-events-none">
+    </div>
     <div class="min-h-screen flex items-center justify-center">
         <div class="grid grid-cols-5 gap-6 p-8 justify-center">
             <?php
@@ -50,5 +51,8 @@
             ?>
         </div>
     </div>
+
+    <!--Javascript-->
+    <script src="/assets/js/example.js"></script>
 </body>
 </html>
