@@ -105,7 +105,6 @@ This project is a minimal web application that serves as a landing page for view
 AD-Task-1
 ├── index.php
 ├── page/
-│   └── index.php
 │   ├── index.php
 │   └── assets/
 │       ├── css/
