@@ -6,7 +6,7 @@
     <title>Weather Forecast</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./page/assets/css/example.css">
+    <link rel="stylesheet" href="/assets/css/example.css">
 </head>
 <body>
     <div class="rain front-row pointer-events-none">
