@@ -106,6 +106,12 @@ AD-Task-1
 ├── index.php
 ├── page/
 │   └── index.php
+│   ├── index.php
+│   └── assets/
+│       ├── css/
+│       │   └── example.css
+│       └── js/
+│           └── example.js
 ├── assets/
 │   ├── css/
 │   │   └── example.css
